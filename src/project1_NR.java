@@ -26,9 +26,14 @@ public class project1_NR {
         while (!userResponse.equals("done"))    {
             System.out.println("Type in the item you want to look for. Type 'done' if you do not want to look for any more items.");
             userResponse = reader.nextLine();
-            if (!userResponse.equals("done"))   {
+            if (!userResponse.equals("done")) {
                 name.add(userResponse);
+                userResponse = Files.readAllLines(Paths.get("products.txt")).get(2);
+                System.out.println(userResponse);
+                } else if (!userResponse.equalsIgnoreCase(allLines.toString())) {
+                    System.out.println("Sorry, that item doesn't exist. Please enter an item: ");
+                    userResponse = reader.nextLine();
+            }
             }
         }
     }
-}
