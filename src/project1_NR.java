@@ -26,6 +26,9 @@ public class project1_NR {
         while (!userResponse.equals("done"))    {
             System.out.println("Type in the item you want to look for. Type 'done' if you do not want to look for any more items.");
             userResponse = reader.nextLine();
+            userResponse = userResponse.toLowerCase();
+
+
             switch (userResponse) {
                 case "doritos" -> name.get(1);
                 case "oreos" -> name.get(2);
@@ -34,10 +37,7 @@ public class project1_NR {
                 case "cake" -> name.get(5);
                 case "acne cream" -> name.get(6);
                 default -> System.out.println("Invalid item, please enter another item: ");
+                }
             }
-            userResponse = reader.nextLine();
-            userResponse.toLowerCase();
-            }
-
         }
     }
