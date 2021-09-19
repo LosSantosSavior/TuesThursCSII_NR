@@ -1,6 +1,6 @@
-Doritos,6.25,30
-Oreos,4.25,50
-Baked Beans,10000.00,1
-Soda,2.50,100
-Cake,30.00,5
-Acne Cream,0.01,200
+doritos,6.25,30
+oreos,4.25,50
+baked beans,10000.00,1
+soda,2.50,100
+cake,30.00,5
+acne cream,0.01,200
