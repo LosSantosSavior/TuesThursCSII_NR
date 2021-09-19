@@ -21,7 +21,7 @@ public class project1_NR {
             numAvailable.add(Integer.parseInt(splitLine[2]));
         }
         for (int i = 0; i <name.size(); i++)    {
-            System.out.println("Product: " + name.get(i) + "\nPrice: " + price.get(i) + "\nStock available: " + numAvailable.get(i));
+            System.out.println("Product: " + name.get(i) + "\nPrice: " + price.get(i) + "\nStock available: " + numAvailable.get(i) + "\n");
         }
         while (!userResponse.equals("done"))    {
             System.out.println("Type in the item you want to look for. Type 'done' if you do not want to look for any more items.");
