@@ -28,7 +28,6 @@ public class project1_NR {
             userResponse = reader.nextLine();
             userResponse = userResponse.toLowerCase();
 
-
             switch (userResponse) {
                 case "doritos" -> name.get(1);
                 case "oreos" -> name.get(2);
@@ -36,7 +35,8 @@ public class project1_NR {
                 case "soda" -> name.get(4);
                 case "cake" -> name.get(5);
                 case "acne cream" -> name.get(6);
-                default -> System.out.println("Invalid item, please enter another item: ");
+                case "done" -> System.exit(0);
+                default -> System.out.println("Invalid item.");
                 }
             }
         }
