@@ -26,12 +26,12 @@ public class project1_NR {
             System.out.println("Product: " + name.get(i) + "\nPrice: " + price.get(i) + "\nStock available: " + numAvailable.get(i) + "\n");
         }
 
-        while (!userResponse.equals("done")) {
+        while (!userResponse.equalsIgnoreCase("done")) {
             System.out.println("Type in the item you want to look for. Type 'done' if you do not want to look for any more items.");
             userResponse = reader.nextLine();
             userResponse = userResponse.toLowerCase();
             for (int i = 0; i < name.size(); i++) {
-                if (userResponse.equals(name.get(i))) {
+                if (userResponse.equals(name.get(i).toLowerCase())) {
                     System.out.println("Product: " + name.get(i) + "\nPrice: " + price.get(i) + "\nStock available: " + numAvailable.get(i) + "\n");
                 }
             }
